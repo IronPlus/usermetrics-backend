@@ -12,11 +12,11 @@ export class PostsService {
   ) {
     this.postsRepository
       .find()
-      .then((posts) => {
+      .then((posts: Post[]) => {
         this.POSTS = posts;
       })
-      .catch((error) => {
-        console.log(error);
+      .catch((error: any) => {
+        console.log(`Error fetching posts: ${error}`);
       });
   }
 
