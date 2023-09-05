@@ -19,7 +19,7 @@ describe('Usermetrics e2e tests', () => {
     await app.init();
   });
 
-  it('/usermetrics-v1/posts/:page (GET)', async () => {
+  it('/usermetrics-v1/posts/:pageNumber (GET)', async () => {
     const res = await request(app.getHttpServer())
       .get('/usermetrics-v1/posts/1')
       .set(headers);
