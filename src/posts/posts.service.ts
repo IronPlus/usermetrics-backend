@@ -5,7 +5,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class PostsService {
-  POSTS: Post[];
+  protected POSTS: Post[];
 
   constructor(
     @InjectRepository(Post) private postsRepository: Repository<Post>,
