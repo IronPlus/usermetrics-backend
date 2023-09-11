@@ -46,6 +46,22 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Dockerization
+
+### Building an image
+
+```bash
+$ docker build -t usermetrics-backend:latest .
+```
+
+### Running a container
+
+```bash
+$ docker run -d -p 8080:8080 --name usermetrics-backend usermetrics-backend:latest
+```
+
+> NOTE: -d: This flag tells Docker to run the container in the background. The container will start and you'll be returned to your command prompt, allowing you to continue using the terminal for other tasks.
+
 ## Improvement ideas
 
 - Use more stronger authentication method (e.g. JWT, OAuth2)
