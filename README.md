@@ -20,6 +20,16 @@ The basic authentication is used for the endpoints.
 $ npm install
 ```
 
+## Configuration
+
+The configuration file is located in the root directory of the project. The configuration file is named as .env. The configuration file contains the following variables:
+
+- PORT: The port number on which the application will be running
+- HTTP_BASIC_USER: The username for basic authentication
+- HTTP_BASIC_PASSWORD: The password for basic authentication
+
+This username/password combination should be used for accessing the endpoints by api clients.
+
 ## Running the app
 
 ```bash
