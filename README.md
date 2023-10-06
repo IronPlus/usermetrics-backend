@@ -74,4 +74,5 @@ $ docker run -d -p 8080:8080 --name usermetrics-backend usermetrics-backend:late
 
 ## Improvement ideas
 
-- Use more stronger authentication method (e.g. JWT, OAuth2)
+- Implement user authentication
+- Implement token-based authentication for API calls (e.g. JWT, OAuth2)
