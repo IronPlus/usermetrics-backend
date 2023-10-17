@@ -22,7 +22,7 @@ $ npm install
 
 ## Configuration
 
-The configuration file is located in the root directory of the project. The configuration file is named as .env. The configuration file contains the following variables:
+Create a configuration file named `.env` in the root directory of the project. Alternatively, you could simply rename the `.env.dist` to `.env`. The configuration file contains the following variables:
 
 - PORT: The port number on which the application will be running
 - HTTP_BASIC_USER: The username for basic authentication
